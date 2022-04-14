@@ -6,6 +6,3 @@ month_gain = (deposit_sum * yearly_interest) / 12
 final_sum = deposit_sum + (months * month_gain)
 
 print(final_sum)
-
-
-

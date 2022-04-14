@@ -1,5 +1,5 @@
-from math import pi
+import math
 radians = float(input())
-degrees = radians * 180 / pi
+degrees = radians * 180 / math.pi
 
 print(degrees)
