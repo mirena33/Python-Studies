@@ -20,7 +20,7 @@ elif 18 < degrees <= 24:
         outfit = "T-Shirt"
         shoes = "Sandals"
 
-elif degrees >= 25:
+else:
     if time_of_the_day == "Morning":
         outfit = "T-Shirt"
         shoes = "Sandals"
