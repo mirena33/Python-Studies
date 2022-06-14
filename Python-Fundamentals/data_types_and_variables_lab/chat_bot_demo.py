@@ -1,24 +1,5 @@
 from nltk.chat.util import Chat, reflections
 
-print("Hello! This is a mini learning chatbot! Which topic would you like to discuss?")
-print("| Programming | Cats | Maths | Cooking |")
-choice = input("Please enter your choice: ").lower()
-
-# default message at the start of chat
-print("Please type lowercase English language to start a conversation. "
-      f"Type quit to leave.\n\n-Hi, I'm a BOT who knows a little bit about {choice}...\nWhat is your name?")
-
-if choice == "programming":
-    pass
-elif choice == "cats":
-    pass
-elif choice == "maths":
-    pass
-elif choice == "cooking":
-    pass
-else:
-    print(f"I haven't learned about {choice} yet..you can try talking to some real people, eh?")
-
 pairs = [
     [
         r"(.*)my name is (.*)",
@@ -67,6 +48,10 @@ pairs = [
         ['How do you know you can\'t %1?', 'Perhaps you could %1 if you tried.', 'What would it take you to %1?']
     ],
 ]
+
+# default message at the start of chat
+print("Please type lowercase English language to start a conversation. "
+      f"Type quit to leave.\n\n-Hi, I'm a chat BOT, but you can call me Dobby.\nWhat is your name?")
 
 # Create Chat Bot
 chat = Chat(pairs, reflections)
