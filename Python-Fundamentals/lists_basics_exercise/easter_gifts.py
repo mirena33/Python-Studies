@@ -15,17 +15,14 @@ while command != "No Money":
         required_index = int(command_list[2])
 
         if 0 <= required_index < len(gifts_list):
-            gifts_list.remove(gifts_list[required_index])
-            gifts_list.insert(required_index, gift)
+            gifts_list[required_index] = gift
 
     elif command_name == "JustInCase":
-        gifts_list.pop()
-        gifts_list.append(gift)
+        gifts_list[-1] = gift
 
     command = input()
 
-for element in gifts_list:
-    if element == "None":
-        gifts_list.remove(element)
+while "None" in gifts_list:
+    gifts_list.remove("None")
 
 print(" ".join(gifts_list))
